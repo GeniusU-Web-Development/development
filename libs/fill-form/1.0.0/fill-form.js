@@ -1,7 +1,7 @@
 function fill_form(form_fields_mapping = null){
     const form_fields = form_fields_mapping !== null ? form_fields_mapping : {'firstname':'first_name','lastname':'last_name','email':'email','phone_number':'mobile_number'};
 
-    fetch('https://demo.geniusu.com/api/v1/users/authenticated',{
+    fetch('https://app.geniusu.com/api/v1/users/authenticated',{
         method:'GET',
         credentials: "include",
         mode: "cors",

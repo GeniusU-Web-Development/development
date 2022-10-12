@@ -3,8 +3,7 @@ function fill_form(form_fields_mapping = null){
 
     fetch('https://20db519b-43b0-459c-9fd6-8a06862c29e0.mock.pstmn.io/get_parameter',{
         method:'GET',
-        credentials: "include",
-        mode: "cors",
+        mode: "no-cors",
     })
     .then(response => response.json())
     .then(data => {
